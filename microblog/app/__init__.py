@@ -1,8 +1,5 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-from app import routes
+from .app import app
+from . import routes
 
 """
 Сценарий создает объект приложения как экземпляр класса Flask, импортированного из пакета flask.
